@@ -1,3 +1,17 @@
+// Classe No
+public class No {
+    int valor;
+    No proximo;
+    No anterior;
+
+    public No(int valor) {
+        this.valor = valor;
+        this.proximo = null;
+        this.anterior = null;
+    }
+}
+
+// Classe ListaDuplamenteEncadeada
 public class ListaDuplamenteEncadeada {
     No inicio;
     No fim;
@@ -95,5 +109,46 @@ public class ListaDuplamenteEncadeada {
         }
 
         System.out.println("Valor " + valor + " removido");
+    }
+
+}
+
+// Classe Main
+public class MainDupla {
+    public static void main(String[] args) {
+        ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();
+
+        lista.inserir(8);
+        lista.inserir(13);
+        lista.inserir(15);
+        lista.inserir(31);
+
+        System.out.println("Lista completa:");
+        lista.listar();
+        lista.listarReverso();
+
+        System.out.println("\nBuscando valores:");
+        lista.buscar(15);
+        lista.buscar(99);
+
+        System.out.println("\nRemovendo valores:");
+        lista.remover(13);
+        lista.remover(8);
+        lista.remover(99);
+
+        System.out.println("\nLista após remoções:");
+        lista.listar();
+        lista.listarReverso();
+
+        System.out.println("\nRemovendo o último:");
+        lista.remover(31);
+
+        System.out.println("\nLista após remoção do último:");
+        lista.listar();
+        lista.listarReverso();
+
+        System.out.println("\nInserindo novamente:");
+        lista.inserir(50);
+        lista.listar();
     }
 }
