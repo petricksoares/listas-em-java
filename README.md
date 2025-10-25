@@ -85,3 +85,11 @@ Lista após remoção do último:
  * Lista (reversa): 15
  * Inserindo novamente:
  * Lista (normal): 15 50
+
+## Explicação da Estrutura da Lista Encadeada Circular
+O código implementa uma Lista Encadeada Circular. A principal característica desse tipo de lista é que o último nó
+aponta de volta para o primeiro nó, formando um ciclo contínuo em vez de terminar em null.
+
+O código é dividido em três classes principais: ListaCircular, No e MainCircular.
+* ListaCircular → Esta classe gerencia a coleção de nós e fornece os métodos para manipular a lista.
+* No inicio; → É o ponteiro de referência principal da lista. Ele define o ponto de partida padrão para as operações. O último nó da lista sempre aponta para este inicio.
