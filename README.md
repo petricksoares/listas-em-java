@@ -132,6 +132,5 @@ Para rodar o código corretamente, certifique-se de que os arquivos estejam orga
 * Classe No -> Primeira classe a ser executada
 * Classe Lista(Encadeada, Duplamente Encadeada ou Circular) -> Segunda a ser exercutada
 * Classe Main(Saída do código) -> Terceira Classe a ser executada.
-## Clone o Repositório💡
-git clone https://github.com/https://github.com/petricksoares/listas-em-java.git
+## Clone o Repositório💡 
 cd https://github.com/petricksoares/listas-em-java
